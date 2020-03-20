@@ -17,6 +17,7 @@ $('.nav_link').click(function (event) {
 });
 function load_content(page, callbackFunction){
     var ajaxUrl = location.origin.concat("/portfolio_v1/pages/"+page+".html");
+    console.log(ajaxUrl)
     $.ajax({
         url: ajaxUrl,
         success: function(content){
